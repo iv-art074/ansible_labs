@@ -1,6 +1,9 @@
 ---
 elasticsearch:
   hosts:
-    localhost:
-      ansible_connection: ssh
-      ansible_user: root
+    centos_elasticsearch:
+      ansible_connection: docker
+kibana:
+  hosts:
+    ubuntu_kibana:
+      ansible_connection: docker
