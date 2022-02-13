@@ -45,3 +45,6 @@ kibana_version - версия Kibana (8.0.0)
 распаковка в рабочий каталог из пакета  
 создание по шаблону переменных окружений (templates)  
 
+
+Репо ссылка
+https://github.com/iv-art074/ansible_labs/tree/main/ansible_playbook  
