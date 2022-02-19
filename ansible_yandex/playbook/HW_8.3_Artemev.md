@@ -29,6 +29,6 @@ PLAY
 производим первичную установку filebeat setup  
 запускаем службы  service filebeat start  
 
-Репо ссылка 
+Репо ссылка https://github.com/iv-art074/ansible_labs/tree/main/ansible_yandex/playbook 
 
 
