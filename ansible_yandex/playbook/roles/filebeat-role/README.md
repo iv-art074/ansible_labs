@@ -11,7 +11,7 @@ Requirements
 Role Variables
 --------------
 
-Variable name	Default	Description
+Variable name	Default	Description  
 kibana_version	"7.14.0"	Параметр, который определяет какой версии kibana будет установлена
 
 Dependencies
