@@ -1,2 +1,7 @@
 ---
 elk_stack_version: "7.14.0"
+ansible_connection: ssh
+ansible_user: iv_art
+kibana_version: "{{  elk_stack_version  }}"
+elasticsearch_version: "{{  elk_stack_version  }}"
+filebeat_version: "{{  elk_stack_version  }}"
