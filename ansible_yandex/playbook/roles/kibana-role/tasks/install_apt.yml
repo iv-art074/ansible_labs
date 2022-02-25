@@ -1,0 +1,7 @@
+---
+- name: Installin kibana-role
+  become: true
+  apt:
+    deb: "/tmp/kibana-{{ kibana_version }}-amd64.deb"
+    state: present
+  notify: restart Kibana

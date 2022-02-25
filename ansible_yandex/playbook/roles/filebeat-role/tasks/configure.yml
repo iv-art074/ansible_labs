@@ -1,0 +1,23 @@
+---
+- name: Set filebeat workin
+  become: true
+  command:
+    cmd: filebeat modules enable system
+    chdir: /usr/share/filebeat/bin
+  register: filebeat_modules
+  changed_when: filebeat_modules.stdout != 'Module system is already enabled'
+- name: start filebeat setup
+  become: true
+  command:
+    cmd: filebeat setup
+    chdir: /usr/share/filebeat/bin
+  register: filebeat_setup
+  changed_when: false
+  until: filebeat_setup is succeeded
+- name: startin module
+  become: true
+  command:
+    cmd: service filebeat start
+    chdir: /usr/share/filebeat/bin
+  register: filebeat_start
+  changed_when: false
