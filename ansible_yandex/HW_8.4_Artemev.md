@@ -5,9 +5,10 @@
  Описать в README.md обе роли и их параметры:
  выложены в корне репо ролей
  
- Репо roles:
- https://github.com/iv-art074/kibana_role
- https://github.com/iv-art074/filebeat_role
+ Репо roles:  
+ https://github.com/iv-art074/kibana_role  
+ https://github.com/iv-art074/filebeat_role  
  
- Playbook:
+ Playbook:  
+ https://github.com/iv-art074/ansible_labs/tree/role/ansible_yandex/playbook  
  
