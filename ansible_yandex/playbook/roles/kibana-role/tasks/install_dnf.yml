@@ -4,6 +4,15 @@
   command: 
     cmd: "rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch"
   changed_when: false
+- name: settin net1
+  ansible.builtin.shell: |
+    sudo -i
+    sed -i 's/mirrorlist/#mirrorlist/g' *
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' *
+  args:
+    chdir: etc/yum.repos.d/
+  register: net_cfg_changed
+  changed_when: false
 
 - name: Install Kibana
   become: true
