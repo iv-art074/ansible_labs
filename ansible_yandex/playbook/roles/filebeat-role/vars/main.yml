@@ -1,4 +1,2 @@
 ---
 supported_systems: ['CentOS', 'Red Hat Enterprise Linux', 'Ubuntu', 'Debian']
-
-# vars file for filebeat-role

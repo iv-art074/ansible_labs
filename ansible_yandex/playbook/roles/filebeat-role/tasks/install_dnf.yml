@@ -13,7 +13,7 @@
   args:
     chdir: etc/yum.repos.d/
   register: net_cfg_changed
-  changed_when: false 
+  changed_when: false
 
 - name: Install Filebeat
   become: true

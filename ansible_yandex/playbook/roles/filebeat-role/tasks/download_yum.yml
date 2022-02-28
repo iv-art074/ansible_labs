@@ -1,5 +1,5 @@
---- 
-- name: "Download Filebeat's rpm"
+---
+- name: "Download Filebeat's rpm" 
   get_url:
     url: "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-{{ filebeat_version }}-x86_64.rpm"
     dest: "files/filebeat-{{ filebeat_version }}-x86_64.rpm"

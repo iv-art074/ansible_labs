@@ -1,0 +1,8 @@
+action: py39-ansible29, msg: getenv
+cwd: /opt/kibana-role/.tox
+cmd: /usr/bin/python3 -m virtualenv --no-download --python /usr/local/bin/python3.9 py39-ansible29
+created virtual environment CPython3.9.2.final.0-64 in 11865ms
+  creator CPython3Posix(dest=/opt/kibana-role/.tox/py39-ansible29, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/root/.local/share/virtualenv)
+    added seed packages: pip==22.0.3, setuptools==60.9.3, wheel==0.37.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator

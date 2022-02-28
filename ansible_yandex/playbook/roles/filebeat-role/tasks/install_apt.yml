@@ -1,5 +1,5 @@
 ---
-- name: Installin Filebeat
+- name: Install Filebeat
   become: true
   apt:
     deb: "/tmp/filebeat-{{ filebeat_version }}-amd64.deb"

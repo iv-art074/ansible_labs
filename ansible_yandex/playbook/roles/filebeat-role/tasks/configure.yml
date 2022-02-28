@@ -10,7 +10,7 @@
   become: true
   template:
     src: filebeat.yml.j2
-    mode: 0644 
+    mode: 0644
     dest: /etc/filebeat/filebeat.yml
   notify: restart Filebeat
 
@@ -19,6 +19,6 @@
   command:
     cmd: filebeat modules enable system
     chdir: /usr/share/filebeat/bin
-  register: filebeat_modules
+  register: filebeat_modules 
   changed_when: filebeat_modules.stdout != 'Module system is already enabled'
 

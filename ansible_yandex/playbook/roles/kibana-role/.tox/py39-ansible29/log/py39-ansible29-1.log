@@ -1,0 +1,37 @@
+action: py39-ansible29, msg: getenv
+cwd: /opt/kibana-role
+cmd: /opt/kibana-role/.tox/py39-ansible29/bin/python -m pip install -rtox-requirements.txt 'ansible<2.10'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/__main__.py", line 29, in <module>
+    from pip._internal.cli.main import main as _main
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/cli/main.py", line 9, in <module>
+    from pip._internal.cli.autocompletion import autocomplete
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/cli/autocompletion.py", line 10, in <module>
+    from pip._internal.cli.main_parser import create_main_parser
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/cli/main_parser.py", line 8, in <module>
+    from pip._internal.cli import cmdoptions
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/cli/cmdoptions.py", line 23, in <module>
+    from pip._internal.cli.parser import ConfigOptionParser
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/cli/parser.py", line 12, in <module>
+    from pip._internal.configuration import Configuration, ConfigurationError
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/configuration.py", line 20, in <module>
+    from pip._internal.exceptions import (
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_internal/exceptions.py", line 13, in <module>
+    from pip._vendor.requests.models import Request, Response
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_vendor/requests/__init__.py", line 137, in <module>
+    from .models import Request, Response, PreparedRequest
+  File "/opt/kibana-role/.tox/py39-ansible29/lib/python3.9/site-packages/pip/_vendor/requests/models.py", line 45, in <module>
+    from .status_codes import codes
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 935, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1025, in _cache_bytecode
+  File "<frozen importlib._bootstrap_external>", line 1050, in set_data
+  File "<frozen importlib._bootstrap_external>", line 126, in _write_atomic
+KeyboardInterrupt
