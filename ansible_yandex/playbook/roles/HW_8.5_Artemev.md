@@ -117,5 +117,5 @@ INFO     Sanity checks: 'docker'
 **
 ```
 repo:
-https://github.com/iv-art074/ansible_labs/tree/testin/ansible_yandex/playbook/roles/kibana-role 
+https://github.com/iv-art074/ansible_labs/tree/testin/ansible_yandex/playbook/roles/kibana-role   
 https://github.com/iv-art074/ansible_labs/tree/testin/ansible_yandex/playbook/roles/filebeat-role 
