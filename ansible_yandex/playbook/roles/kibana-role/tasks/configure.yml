@@ -1,5 +1,5 @@
 ---
-- name: Enablin Kibana service
+- name: Enable Kibana service
   become: true
   service:
     name: kibana

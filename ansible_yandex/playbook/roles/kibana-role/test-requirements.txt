@@ -1,0 +1,7 @@
+molecule==3.4.0
+molecule_docker==0.3.3
+ansible<3
+docker
+selinux
+ansible-lint
+yamllint

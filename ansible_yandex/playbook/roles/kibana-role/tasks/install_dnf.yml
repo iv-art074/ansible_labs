@@ -4,6 +4,7 @@
   command: 
     cmd: "rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch"
   changed_when: false
+
 - name: settin net1
   ansible.builtin.shell: |
     sudo -i
