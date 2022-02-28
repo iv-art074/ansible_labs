@@ -1,5 +1,5 @@
 ---
-- name: Elastic
+- name: Elastic 
   hosts: elasticsearch
   tasks:
     - name: "Include elasticsearch-role"

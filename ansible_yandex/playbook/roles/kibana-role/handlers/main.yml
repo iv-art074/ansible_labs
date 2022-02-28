@@ -1,4 +1,4 @@
-- name: restart Kibana
+- name: restart Kibana 
   become: true
   service:
     name: kibana

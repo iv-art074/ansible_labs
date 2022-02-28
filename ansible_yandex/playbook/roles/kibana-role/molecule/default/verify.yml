@@ -12,7 +12,7 @@
       timeout: 60
       msg: "Port 5601 wasn't opened"
   - name: Wait for Kibana log file created
-    wait_for:
+    wait_for: 
       path: /var/lib/kibana/
       state: present
       timeout: 60

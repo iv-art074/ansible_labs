@@ -1,5 +1,5 @@
 ---
-- name: Install kibana-role
+- name: Install kibana-role 
   become: true
   apt:
     deb: "/tmp/kibana-{{ kibana_version }}-amd64.deb"

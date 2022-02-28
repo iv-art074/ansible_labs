@@ -1,4 +1,4 @@
----
+--- 
 - name: Fail if unsupported system detected
   fail:
     msg: "System {{ ansible_distribution }} is not support by this role"
