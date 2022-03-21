@@ -1,6 +1,7 @@
 ---
   - src: git@github.com:iv-art074/elastic_template.git
     scm: git
+    version: "1.0.0"
     name: elastic 
     
   - src: git@github.com:iv-art074/kibana-role.git
