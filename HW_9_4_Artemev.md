@@ -30,3 +30,9 @@ pipeline {
 }
 ```  
 
+4. Создать Multibranch Pipeline на запуск Jenkinsfile из репозитория.  
+![Screenshot 2022-03-21 215103](https://user-images.githubusercontent.com/87374285/159255663-b355bf0f-816c-4510-baa3-d29c11403926.png)  
+
+5. Создать Scripted Pipeline, наполнить его скриптом из pipeline.  
+
+
