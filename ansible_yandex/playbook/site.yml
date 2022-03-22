@@ -1,4 +1,15 @@
 ---
+- name: Prepare jenkins agent
+  hosts: elasticsearch
+  become: true
+  become_user: "{{ jenkins_user_name }}"
+  tasks:
+    - name: Add master publickey into authorized_key
+      authorized_key:
+        user: "{{ jenkins_user_name }}"
+        state: present
+        key: "{{ hostvars['jenkins-master-01']['ssh_key_info']['ssh_public_key'] }}"
+        
 # Elasticsearch 
 - name: Install Elasticsearch    
   hosts: elasticsearch
